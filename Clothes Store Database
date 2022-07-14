@@ -1,0 +1,29 @@
+CREATE TABLE clothes (id INTEGER, Name TEXT, Price INTEGER, Aisle INTEGER, Quantity INTEGER);
+
+INSERT INTO clothes VALUES(1, "Shirt", 5.00, 1, 50);
+INSERT INTO clothes VALUES(2, "Pants", 5.00, 2, 80);
+INSERT INTO clothes VALUES(3, "Socks", 2.00, 3, 25);
+INSERT INTO clothes VALUES(4, "Jackets",20.00, 4, 80);
+INSERT INTO clothes VALUES(5, "Shoes", 20.00, 5, 78);
+INSERT INTO clothes VALUES(6, "Shorts", 8.00, 2, 85);
+INSERT INTO clothes VALUES(7, "Hats", 3.00, 5, 14);
+INSERT INTO clothes VALUES(8, "Gloves", 2.50, 5, 22);
+INSERT INTO clothes VALUES(9, "Scarf", 1.50, 5, 12);
+INSERT INTO clothes VALUES(10, "Sweathshirts", 18.00, 4, 35);
+INSERT INTO clothes VALUES(11, "Undergarments", 4.00, 3, 65);
+INSERT INTO clothes VALUES(12, "Jeans", 7.00, 2, 75);
+INSERT INTO clothes VALUES(13, "Purses", 21.00, 5, 18);
+INSERT INTO clothes VALUES(14, "Dresses", 11.00, 4, 55);
+INSERT INTO clothes VALUES(15, "Blouses", 6.00, 4, 24);
+
+--Display database in desedning price
+SELECT * FROM clothes
+ORDER BY price desc;
+
+--Display the average price of an item
+SELECT AVG(price) "avg bulk item price"
+FROM clothes
+
+--Display the items in order by aisle
+SELECT * FROM clothes
+ORDER BY aisle asc;
